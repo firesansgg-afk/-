@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда автомобилей</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Аренда автомобилей</h1>
+</header>
+
+<main>
+
+    <!-- Поле поиска -->
+    <section class="search-section">
+        <input
+            type="text"
+            id="search"
+            placeholder="Поиск автомобиля..."
+        >
+    </section>
+
+    <!-- Подготовка к сортировке -->
+    <section class="sort-section">
+        <button data-sort="price">Сортировать по цене</button>
+        <button data-sort="year">Сортировать по году</button>
+    </section>
+
+    <!-- Список автомобилей -->
+    <section class="cars-list">
+
+        <article
+            class="car-card"
+            data-price="45"
+            data-year="2022"
+        >
+            <img src="images/toyota1.png" alt="Toyota Corolla">
+            <h2>
+            <a href="car-details.html">Toyota Corolla</a>
+            </h2>
+            <p>Год: 2022</p>
+            <p>Цена: 3500 ₽/сутки</p>
+        </article>
+
+        <article
+            class="car-card"
+            data-price="75"
+            data-year="2023"
+        >
+            <img src="images/bmw.png" alt="BMW 3 Series">
+            <h2>BMW 3 Series</h2>
+            <p>Год: 2023</p>
+            <p>Цена: 6000 ₽/сутки</p>
+        </article>
+
+        <article
+            class="car-card"
+            data-price="40"
+            data-year="2021"
+        >
+            <img src="images/kia.png" alt="Kia Rio">
+            <h2>Kia Rio</h2>
+            <p>Год: 2021</p>
+            <p>Цена: 3000 ₽/сутки</p>
+        </article>
+
+        <article
+            class="car-card"
+            data-price="90"
+            data-year="2024"
+        >
+            <img src="images/audi.png" alt="Audi A4">
+            <h2>Audi A4</h2>
+            <p>Год: 2024</p>
+            <p>Цена: 7500 ₽/сутки</p>
+        </article>
+
+    </section>
+
+    <!-- Подготовка пагинации -->
+    <section class="pagination">
+        <button data-page="prev">Назад</button>
+        <button data-page="1">1</button>
+        <button data-page="2">2</button>
+        <button data-page="next">Вперед</button>
+    </section>
+
+</main>
+
+</body>
+</html>
