@@ -11,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
 
 header {
     background: linear-gradient(135deg, #1f2937, #111827);
@@ -27,7 +26,6 @@ header h1 {
     font-weight: 700;
 }
 
-/* SEARCH */
 
 .search-section {
     text-align: center;
@@ -45,7 +43,6 @@ header h1 {
     font-size: 16px;
 }
 
-/* SORT */
 
 .sort-section {
     text-align: center;
@@ -71,7 +68,6 @@ header h1 {
     transform: translateY(-2px);
 }
 
-/* CARDS */
 
 .cars-list {
     max-width: 1200px;
@@ -123,14 +119,12 @@ header h1 {
     font-size: 18px;
 }
 
-/* PAGINATION */
 
 .pagination {
     text-align: center;
     margin: 40px 0;
 }
 
-/* DETAILS PAGE */
 
 .details-page {
     max-width: 1100px;
@@ -214,7 +208,6 @@ header h1 {
     color: #111827;
 }
 
-/* FOOTER */
 
 footer {
     text-align: center;
@@ -222,25 +215,4 @@ footer {
     background: #111827;
     color: white;
     margin-top: 40px;
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .cars-list {
-        grid-template-columns: 1fr;
-    }
-
-    .thumbnails {
-        justify-content: center;
-    }
-
-    .thumbnails img {
-        width: 120px;
-        height: 80px;
-    }
 }

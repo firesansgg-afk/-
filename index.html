@@ -9,12 +9,13 @@
 <body>
 
 <header>
-    <h1>Аренда автомобилей</h1>
+    <h1>AutoRent</h1>
+    <p>Надежная аренда автомобилей по выгодным ценам</p>
 </header>
 
 <main>
 
-    <!-- Поле поиска -->
+
     <section class="search-section">
         <input
             type="text"
@@ -23,72 +24,184 @@
         >
     </section>
 
-    <!-- Подготовка к сортировке -->
+
     <section class="sort-section">
-        <button data-sort="price">Сортировать по цене</button>
-        <button data-sort="year">Сортировать по году</button>
+        <button data-sort="price">
+            Сортировать по цене
+        </button>
+
+        <button data-sort="year">
+            Сортировать по году
+        </button>
     </section>
 
-    <!-- Список автомобилей -->
+
     <section class="cars-list">
 
         <article
             class="car-card"
-            data-price="45"
+            data-price="3500"
             data-year="2022"
         >
             <img src="images/toyota1.png" alt="Toyota Corolla">
+
             <h2>
-            <a href="car-details.html">Toyota Corolla</a>
+                <a href="car-details.html">
+                    Toyota Corolla
+                </a>
             </h2>
+
             <p>Год: 2022</p>
             <p>Цена: 3500 ₽/сутки</p>
         </article>
 
         <article
             class="car-card"
-            data-price="75"
+            data-price="6000"
             data-year="2023"
         >
             <img src="images/bmw.png" alt="BMW 3 Series">
+
             <h2>BMW 3 Series</h2>
+
             <p>Год: 2023</p>
             <p>Цена: 6000 ₽/сутки</p>
         </article>
 
         <article
             class="car-card"
-            data-price="40"
+            data-price="3000"
             data-year="2021"
         >
             <img src="images/kia.png" alt="Kia Rio">
+
             <h2>Kia Rio</h2>
+
             <p>Год: 2021</p>
             <p>Цена: 3000 ₽/сутки</p>
         </article>
 
         <article
             class="car-card"
-            data-price="90"
+            data-price="7500"
             data-year="2024"
         >
             <img src="images/audi.png" alt="Audi A4">
+
             <h2>Audi A4</h2>
+
             <p>Год: 2024</p>
             <p>Цена: 7500 ₽/сутки</p>
         </article>
 
+        <article
+            class="car-card"
+            data-price="4500"
+            data-year="2021"
+        >
+            <img src="images/hyundai.png" alt="Hyundai Solaris">
+
+            <h2>Hyundai Solaris</h2>
+
+            <p>Год: 2021</p>
+            <p>Цена: 4500 ₽/сутки</p>
+        </article>
+
+        <article
+            class="car-card"
+            data-price="5000"
+            data-year="2022"
+        >
+            <img src="images/skoda.png" alt="Skoda Octavia">
+
+            <h2>Skoda Octavia</h2>
+
+            <p>Год: 2022</p>
+            <p>Цена: 5000 ₽/сутки</p>
+        </article>
+
+        <article
+            class="car-card"
+            data-price="5500"
+            data-year="2019"
+        >
+            <img src="images/mazda.png" alt="Mazda 6">
+
+            <h2>Mazda 6</h2>
+
+            <p>Год: 2019</p>
+            <p>Цена: 5500 ₽/сутки</p>
+        </article>
+
+        <article
+            class="car-card"
+            data-price="7000"
+            data-year="2024"
+        >
+            <img src="images/mercedes.png" alt="Mercedes C-Class">
+
+            <h2>Mercedes C-Class</h2>
+
+            <p>Год: 2024</p>
+            <p>Цена: 7000 ₽/сутки</p>
+        </article>
+
+        <article
+            class="car-card"
+            data-price="6500"
+            data-year="2023"
+        >
+            <img src="images/volkswagen.png" alt="Volkswagen Passat">
+
+            <h2>Volkswagen Passat</h2>
+
+            <p>Год: 2023</p>
+            <p>Цена: 6500 ₽/сутки</p>
+        </article>
+
+        <article
+            class="car-card"
+            data-price="8000"
+            data-year="2025"
+        >
+            <img src="images/lexus.png" alt="Lexus ES">
+
+            <h2>Lexus ES</h2>
+
+            <p>Год: 2025</p>
+            <p>Цена: 8000 ₽/сутки</p>
+        </article>
+
     </section>
 
-    <!-- Подготовка пагинации -->
+
     <section class="pagination">
-        <button data-page="prev">Назад</button>
-        <button data-page="1">1</button>
-        <button data-page="2">2</button>
-        <button data-page="next">Вперед</button>
+
+        <button data-page="prev">
+            Назад
+        </button>
+
+        <button data-page="1">
+            1
+        </button>
+
+        <button data-page="2">
+            2
+        </button>
+
+        <button data-page="next">
+            Вперед
+        </button>
+
     </section>
 
 </main>
+
+<footer>
+    <p>© 2026 AutoRent. Все права защищены.</p>
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
