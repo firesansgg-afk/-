@@ -3,106 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toyota Corolla - Аренда авто</title>
+    <title>Toyota Corolla - Детали автомобиля</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
     <h1>Toyota Corolla</h1>
+    <p>Подробная информация об автомобиле</p>
 </header>
 
 <main class="details-page">
 
+
     <section class="gallery">
+
         <div class="main-image">
-            <img src="images/toyota1.png" alt="Toyota Corolla">
+            <img
+                id="mainCarImage"
+                src="images/toyota1.png"
+                alt="Toyota Corolla"
+            >
         </div>
 
         <div class="thumbnails">
-            <img src="images/toyota1.png" alt="Фото 1">
-            <img src="images/toyota2.png" alt="Фото 2">
-            <img src="images/toyota3.png" alt="Фото 3">
-            <img src="images/toyota4.png" alt="Фото 4">
+
+            <img
+                src="images/toyota1.png"
+                alt="Фото 1"
+            >
+
+            <img
+                src="images/toyota2.png"
+                alt="Фото 2"
+            >
+
+            <img
+                src="images/toyota3.png"
+                alt="Фото 3"
+            >
+
         </div>
+
     </section>
 
+
     <section class="description">
+
         <h2>Описание автомобиля</h2>
 
         <p>
             Toyota Corolla — надежный и экономичный седан,
-            идеально подходящий для городских поездок и путешествий.
-            Автомобиль оснащен современными системами безопасности,
-            кондиционером и мультимедийной системой.
+            идеально подходящий для поездок по городу и
+            путешествий на дальние расстояния. Автомобиль
+            отличается комфортным салоном, низким расходом
+            топлива и современными системами безопасности.
         </p>
+
     </section>
 
+
     <section class="specifications">
+
         <h2>Характеристики</h2>
 
         <table>
+
             <tr>
                 <td>Марка</td>
                 <td>Toyota</td>
             </tr>
+
             <tr>
                 <td>Модель</td>
                 <td>Corolla</td>
             </tr>
+
             <tr>
                 <td>Год выпуска</td>
                 <td>2022</td>
             </tr>
+
             <tr>
-                <td>Тип КПП</td>
-                <td>Автомат</td>
+                <td>Коробка передач</td>
+                <td>Автоматическая</td>
             </tr>
+
             <tr>
-                <td>Топливо</td>
+                <td>Тип топлива</td>
                 <td>Бензин</td>
             </tr>
+
             <tr>
-                <td>Расход</td>
-                <td>5.8 л / 100 км</td>
+                <td>Количество мест</td>
+                <td>5</td>
             </tr>
+
             <tr>
                 <td>Стоимость аренды</td>
                 <td>3500 ₽/сутки</td>
             </tr>
+
         </table>
+
     </section>
 
+
     <section class="reviews">
+
         <h2>Отзывы клиентов</h2>
 
-        <div class="review">
-            <h3>Иван Петров</h3>
-            <p>
-                Отличный автомобиль. Экономичный и комфортный.
-                Поездка прошла без проблем.
-            </p>
+        <div id="reviewsContainer">
+
+            <div class="review">
+                <h3>Иван</h3>
+                <p>
+                    Отличный автомобиль, очень комфортный
+                    и экономичный.
+                </p>
+            </div>
+
+            <div class="review">
+                <h3>Мария</h3>
+                <p>
+                    Брали машину на выходные. Всё понравилось,
+                    рекомендую.
+                </p>
+            </div>
+
         </div>
 
-        <div class="review">
-            <h3>Анна Смирнова</h3>
-            <p>
-                Машина чистая и ухоженная.
-                Процесс аренды занял всего несколько минут.
-            </p>
-        </div>
+        <!-- Форма добавления отзывов -->
 
-        <div class="review">
-            <h3>Сергей Ковалев</h3>
-            <p>
-                Хорошее состояние автомобиля и приемлемая цена.
-                Буду обращаться снова.
-            </p>
+        <div class="review-form">
+
+            <input
+                type="text"
+                id="userName"
+                placeholder="Введите ваше имя"
+            >
+
+            <textarea
+                id="userReview"
+                placeholder="Введите ваш отзыв"
+            ></textarea>
+
+            <button id="addReviewBtn">
+                Добавить отзыв
+            </button>
+
         </div>
 
     </section>
 
 </main>
+
+<footer>
+    <p>© 2026 AutoRent. Все права защищены.</p>
+</footer>
+
+<script src="js/details.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,3 @@
-console.log("JavaScript работает");
 const searchInput = document.getElementById("search");
 
 const carsList = document.querySelector(".cars-list");
@@ -10,7 +9,6 @@ const pageButtons = document.querySelectorAll(".pagination button");
 const carsPerPage = 5;
 let currentPage = 1;
 
-/* ---------- ПОИСК ---------- */
 
 searchInput.addEventListener("input", function () {
 
@@ -33,7 +31,6 @@ searchInput.addEventListener("input", function () {
     updatePagination();
 });
 
-/* ---------- СОРТИРОВКА ---------- */
 
 sortButtons.forEach(button => {
 
@@ -66,7 +63,6 @@ sortButtons.forEach(button => {
 
 });
 
-/* ---------- ПАГИНАЦИЯ ---------- */
 
 function updatePagination() {
 
@@ -111,7 +107,6 @@ function updatePagination() {
 
 }
 
-/* ---------- КНОПКИ СТРАНИЦ ---------- */
 
 pageButtons.forEach(button => {
 
@@ -150,6 +145,5 @@ pageButtons.forEach(button => {
 
 });
 
-/* ---------- ЗАПУСК ---------- */
 
 updatePagination();

@@ -216,3 +216,34 @@ footer {
     color: white;
     margin-top: 40px;
 }
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.review-form input,
+.review-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.review-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.review-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background: #1d4ed8;
+}
